@@ -1,7 +1,10 @@
 import "../styles/login.css";
-import bgImage from "../assets/meeting-room.png";
+import bgImage from "../assets/meeting-room.png"; // untuk background image
+import { useState } from "react";
 
 export default function Login() {
+  const [showPassword, setShowPassword] = useState(false);
+
   return (
     <>
       <div
@@ -30,9 +33,10 @@ export default function Login() {
               required
             />
           </div>
+
           <div className="input-group">
             <input
-              type="password"
+              type={showPassword ? "text" : "password"}
               id="password"
               placeholder="Password"
               className="input-field"
@@ -40,13 +44,14 @@ export default function Login() {
             />
             <button
               type="button"
-              id="togglePassword"
               className="password-toggle"
+              onClick={() => setShowPassword(!showPassword)}
             >
-              <i className="fas fa-eye-slash"></i>
+              {showPassword ? "🙈" : "👁️"}
             </button>
           </div>
-          <div style="margin-bottom: 24px;">
+
+          <div style={{ marginBottom: "24px" }}>
             <a href="#" className="forgot-password">
               Forgot Password?
             </a>
