@@ -5,6 +5,7 @@ export default function Login() {
     <>
       <div>
         <p className={styles.pada}>Ini halaman Login</p>
+        <p className={styles.sila}>Silahkan Login disini</p>
       </div>
     </>
   );

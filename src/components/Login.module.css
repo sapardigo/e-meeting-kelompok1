@@ -5,3 +5,21 @@
   padding: 10px;
   border-radius: 15px;
 }
+
+.sila {
+  color: rgb(202, 166, 166);
+  font-weight: 700;
+  background-color: rgb(55, 208, 157);
+  padding: 10px;
+  border-radius: 15px;
+}
+
+/* ini css dari App.jsx */
+
+.paragraf {
+  color: white;
+  font-size: 20px;
+  background-color: darkolivegreen;
+  padding: 4px;
+  border-radius: 5px;
+}
