@@ -1,8 +1,13 @@
 import "../styles/login.css";
+import bgImage from "../assets/meeting-room.png";
+
 export default function Login() {
   return (
     <>
-      <div className="background"></div>
+      <div
+        className="background"
+        style={{ backgroundImage: `url(${bgImage})` }}
+      ></div>
 
       <div className="login-box">
         <div className="logo-container">
